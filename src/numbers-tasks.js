@@ -205,7 +205,7 @@ function isPrime(n) {
   return true;
 }
 
-/**
+/** 12
  * Tries to convert value to number and returns it if conversion was successful;
  * otherwise returns default value passed as a second argument.
  *
@@ -227,7 +227,7 @@ function toNumber(value, def) {
   return def;
 }
 
-/**
+/** 13
  * Returns the cube of the given number.
  *
  * @param {number} num
@@ -238,11 +238,11 @@ function toNumber(value, def) {
  *   -2 => -8
  *   0  => 0
  */
-function getCube(/* num */) {
-  throw new Error('Not implemented');
+function getCube(num) {
+  return num ** 3;
 }
 
-/**
+/** 14
  * Returns the Fibonacci number located at the index position.
  *
  * @param {number} index
@@ -259,7 +259,7 @@ function getFibonacciNumber(/* index */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 15
  * Returns the sum of all numbers from 1 to n.
  *
  * @param {number} n
@@ -270,8 +270,12 @@ function getFibonacciNumber(/* index */) {
  *   10 => 55 // (1+2+3+...+10)
  *   1  => 1
  */
-function getSumToN(/* n */) {
-  throw new Error('Not implemented');
+function getSumToN(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i += 1) {
+    sum += i;
+  }
+  return sum;
 }
 
 /**

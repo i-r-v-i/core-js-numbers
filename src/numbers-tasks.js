@@ -278,7 +278,7 @@ function getSumToN(n) {
   return sum;
 }
 
-/**
+/** 16
  * Returns the sum of the digits of a given number.
  *
  * @param {number} num
@@ -289,11 +289,15 @@ function getSumToN(n) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+function getSumOfDigits(num) {
+  const arr = num.toString().split('');
+  let sum = 0;
+  // eslint-disable-next-line no-return-assign
+  arr.forEach((i) => (sum += +i));
+  return sum;
 }
 
-/**
+/** 17
  * Returns true if the given number is a power of two, false otherwise.
  *
  * @param {number} num
@@ -304,11 +308,11 @@ function getSumOfDigits(/* num */) {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo(/* num */) {
-  throw new Error('Not implemented');
+function isPowerOfTwo(num) {
+  return Math.log2(num) % 1 === 0;
 }
 
-/**
+/** 18
  * Returns the sine of a number.
  *
  * @param {number} num
@@ -322,7 +326,7 @@ function getSine(/* num */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 19
  * Returns a string representation of a number in a specified base (radix).
  *
  * @param {number} number
@@ -337,7 +341,7 @@ function numberToStringInBase(/* number, base */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 20
  * Returns a string representation of a number in exponential notation.
  *
  * @param {number} number
@@ -351,7 +355,7 @@ function toExponential(/* number, fractionDigits */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 21
  * Returns a string representation of a number in fixed-point notation.
  *
  * @param {number} number
@@ -366,7 +370,7 @@ function toFixed(/* number, fractionDigits */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 22
  * Returns a string representation of a number in normal (fixed-point or exponential)
  * notation rounded to precision significant digits.
  *
@@ -382,7 +386,7 @@ function toPrecision(/* number, precision */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 23
  * Returns the primitive value of a Number object.
  *
  * @param {Number} number
@@ -396,7 +400,7 @@ function getNumberValue(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 24
  * Returns a boolean value indicating whether the parameter is a number or not.
  *
  * @param {number} number
@@ -415,7 +419,7 @@ function isNumber(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 25
  * Returns a boolean value indicating whether a number is an integer or not.
  *
  * @param {number} number
@@ -430,7 +434,7 @@ function isInteger(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 26
  * Returns a floating point number or, if the number cannot be parsed from the argument, returns NaN.
  *
  * @param {string} str
@@ -444,7 +448,7 @@ function getFloatOnString(/* str */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 27
  * Returns an integer of the specified base or, if the number cannot be parsed
  * from the argument, returns NaN.
  *
@@ -462,7 +466,7 @@ function getIntegerOnString(/* str, base */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 28
  * Returns whether a number is a safe integer.
  *
  * @param {number} number
@@ -477,7 +481,7 @@ function isSafeInteger(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 29
  * Returns the smallest integer less than or equal to a given number.
  *
  * @param {number} number
@@ -491,7 +495,7 @@ function roundToSmallestInteger(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 30
  * Returns the largest integer greater than or equal to a given number.
  *
  * @param {number} number
@@ -505,7 +509,7 @@ function roundToLargestInteger(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 31
  * Returns the value of a number rounded to the nearest integer.
  *
  * @param {number} number
@@ -520,7 +524,7 @@ function roundToNearestInteger(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 32
  * Returns the integer part of a number by removing any fractional digits.
  *
  * @param {number} number
@@ -535,7 +539,7 @@ function getIntegerPartNumber(/* number */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 33
  * Returns the sum of numbers.
  *
  * @param {number} x1
@@ -551,7 +555,7 @@ function getSumOfNumbers(/* x1, x2, x3 */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 34
  * Returns the largest number.
  *
  * @param {number} firstNumber
@@ -567,7 +571,7 @@ function getMaxNumber(/* firstNumber, secondNumber */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 35
  * Returns a random integer in the range from min to max.
  *
  * @param {number} min
@@ -583,7 +587,7 @@ function getRandomInteger(/* min, max */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 36
  * Returns the length of the hypotenuse of a right triangle.
  *
  * @param {number} a
@@ -597,7 +601,7 @@ function getHypotenuse(/* a, b */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 37
  * Returns count of odd numbers from zero to the resulting number.
  * The resulting number is taken into account.
  *
